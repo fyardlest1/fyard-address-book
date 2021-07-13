@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Address Book</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href='/css/site.css' >
+</head>
+
+<body>
+       <div class="container mt-5">
+           <h2>Fyardlest Address Book</h2>
+           <div class="border border-2 border-info shadow-lg p-2 bg-light">
+           <div class="row row-cols-1 row-cols-md-2 p-2">
+               <div class="col-md-4 col-6">
+                   <img src="img/fyard.jpg" alt="Fyardlest Picture" class="img-fluid">
+               </div>
+               <div class="col-md-8 col">
+                    <form action='' method="post">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col-sm-12 col-md-6 form-group">
+                                <label for='firstname' class='form-label'>First Name</label>
+                                <input 
+                                    type="text" id="firstname" name="firstname" 
+                                    placeholder="First Name" class="form-control"
+                                    aria-label="Last Name" required
+                                >
+                            </div>
+                            <div class="col col-md-6 form-group">
+                                <label for="lastname" class='form-label'>Last Name</label>
+                                <input 
+                                    type="text" id="lastname" name="lastname" 
+                                    placeholder="Last Name" class="form-control" 
+                                    aria-label="Last Name" required
+                                >
+                            </div>
+                        </div>
+                        <div class="row py-2 row-cols-1 row-cols-md-2">
+                            <div class="col form-group">
+                                <label for='email' class='form-label'>Email</label>
+                                <input 
+                                    type="email" id="email" name="email" 
+                                    placeholder="Email" class="form-control"
+                                    aria-label="Email" required
+                                >
+                            </div>
+                            <div class="col form-group">
+                                <label for="phone" class='form-label'>Phone</label>
+                                <input 
+                                    type="tel" id="phone" name="phone" 
+                                    placeholder="Phone" class="form-control" 
+                                    aria-label="Phone"
+                                >
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col form-group">
+                                <label for='address' class='form-label'>Address</label>
+                                <input 
+                                    type="text" id="address" name="address" 
+                                    placeholder="1234 Monseigneur Guilloux" class="form-control"
+                                    aria-label="Address" required
+                                >
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col form-group">
+                                <label for='addressTwo' class='form-label'>Address 2 (optional)</label>
+                                <input 
+                                    type="text" id="addressTwo" name="addressTwo" 
+                                    placeholder="Apt, studio, or floor" class="form-control"
+                                    aria-label="Address Two" required
+                                >
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col-md-6 col form-group">
+                                <label for='city' class='form-label'>City</label>
+                                <input 
+                                    type="text" id="city" name="city"
+                                    class="form-control"
+                                    aria-label="City" required
+                                >
+                            </div>
+                            <div class="col col-md-4 form-group">
+                                <label for='state' class='form-label'>State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-2 form-group">
+                                <label for='zip' class='form-label'>Zip</label>
+                                <input 
+                                    type="text" id="zip" name="city" 
+                                    class="form-control"
+                                    aria-label="Zip" required
+                                >
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                            <label class="form-check-label" for="checkbox">
+                                Family
+                            </label>
+                        </div>
+                        <div class="py-2 d-grid justify-content-end">
+                            <button type="submit" class="btn btn-primary ">Save</button>
+                        </div>
+                    </form>
+               </div>  
+               </div>                  
+                             
+            </div>
+       </div> 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
